@@ -1,0 +1,3 @@
+rootProject.name = 'jenkins-practice-pipelines'
+include 'jenkins-gdsl'
+
