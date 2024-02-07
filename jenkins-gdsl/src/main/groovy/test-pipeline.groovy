@@ -4,7 +4,8 @@ pipeline{
         stage ('Read File'){
             steps{
                 script{
-                    def props = readJSON file: '/jenkins-gdsl/src/main/groovy/org/example/properties'
+                    print "Currently in: " + pwd()
+                    def props = readJSON file: '/jenkins-gdsl/src/main/groovy/org/example/properties.json'
                     print props['name']
                 }
             }
